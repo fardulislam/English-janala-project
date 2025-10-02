@@ -100,9 +100,47 @@
 <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
   
 </section>
-<section id="word-container" class="bg-gray-100 w-11/12 mx-auto p-10 my-10 grid grid-cols-3 gap-5 ">
+<section class="flex justify-center mt-10 ">
+  <div class="join">
+  <div>
+    <label class="input validator join-item">
+      
+      <input id="input-search" type="text" placeholder="search Vocabulary now" required />
+    </label>
+    
+  </div>
+  <button id="btn-search" class="btn btn-primary join-item">search</button>
+</div>
+</section>
+
+<section id="spinner" class="flex justify-center items-center py-10 hidden">
+  <span class="loading loading-bars loading-xl"></span>
 
 </section>
+
+<section id="word-container" class="bg-gray-100 w-11/12 mx-auto p-10 my-10 grid grid-cols-3 gap-5 ">
+<div class="text-center col-span-full rounded-xl py-10 space-y-6 font-bangla">
+  
+  <p class="text-gray-400 font-medium ">আপনি এখনো কোন Lesson Select করেন ন</p>
+  <h2 class="text-4xl font-medium ">একটি Lesson Select করুন।</h2>
+</div>
+</section>
+
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details-container" class="space-y-5">
+      
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 <script src="script/index.js"></script>
   </body>
 </html>
